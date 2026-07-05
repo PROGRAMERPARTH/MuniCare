@@ -7,7 +7,7 @@ export const processNewComplaint = async (text: string, imageUrl?: string) => {
     imageAnalysis = await analyzeImage(imageUrl);
   }
   
-  const textAnalysis = await analyzeComplaintText(text);
+  const textAnalysis = (await analyzeComplaintText(text)) as any;
 
   return {
     combinedPriority: textAnalysis.priority,

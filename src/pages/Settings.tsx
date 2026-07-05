@@ -1,5 +1,5 @@
 import { Bell, Moon, Shield, Globe } from 'lucide-react';
-import { useThemeStore } from '../../stores/themeStore';
+import { useThemeStore } from '../stores/themeStore';
 
 export default function Settings() {
   const { theme, toggleTheme } = useThemeStore();
